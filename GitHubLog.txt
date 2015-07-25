@@ -1,0 +1,542 @@
+2015-07-21 18:25:36.6728|WARN|thread: 1|StandardUserErrors|Showing user error Please check your log file for more details, or email support if you are still having problems.
+GitHub.IO.ProcessException: Cloning into 'parentorbit'...
+remote: Counting objects: 2837, done.[K
+remote: Compressing objects:   0% (1/824)   [K
+remote: Compressing objects:   1% (9/824)   [K
+remote: Compressing objects:   2% (17/824)   [K
+remote: Compressing objects:   3% (25/824)   [K
+remote: Compressing objects:   4% (33/824)   [K
+remote: Compressing objects:   5% (42/824)   [K
+remote: Compressing objects:   6% (50/824)   [K
+remote: Compressing objects:   7% (58/824)   [K
+remote: Compressing objects:   8% (66/824)   [K
+remote: Compressing objects:   9% (75/824)   [K
+remote: Compressing objects:  10% (83/824)   [K
+remote: Compressing objects:  11% (91/824)   [K
+remote: Compressing objects:  12% (99/824)   [K
+remote: Compressing objects:  13% (108/824)   [K
+remote: Compressing objects:  14% (116/824)   [K
+remote: Compressing objects:  15% (124/824)   [K
+remote: Compressing objects:  16% (132/824)   [K
+remote: Compressing objects:  17% (141/824)   [K
+remote: Compressing objects:  18% (149/824)   [K
+remote: Compressing objects:  19% (157/824)   [K
+remote: Compressing objects:  20% (165/824)   [K
+remote: Compressing objects:  21% (174/824)   [K
+remote: Compressing objects:  22% (182/824)   [K
+remote: Compressing objects:  23% (190/824)   [K
+remote: Compressing objects:  24% (198/824)   [K
+remote: Compressing objects:  25% (206/824)   [K
+remote: Compressing objects:  26% (215/824)   [K
+remote: Compressing objects:  27% (223/824)   [K
+remote: Compressing objects:  28% (231/824)   [K
+remote: Compressing objects:  29% (239/824)   [K
+remote: Compressing objects:  30% (248/824)   [K
+remote: Compressing objects:  31% (256/824)   [K
+remote: Compressing objects:  32% (264/824)   [K
+remote: Compressing objects:  33% (272/824)   [K
+remote: Compressing objects:  34% (281/824)   [K
+remote: Compressing objects:  35% (289/824)   [K
+remote: Compressing objects:  36% (297/824)   [K
+remote: Compressing objects:  37% (305/824)   [K
+remote: Compressing objects:  38% (314/824)   [K
+remote: Compressing objects:  39% (322/824)   [K
+remote: Compressing objects:  40% (330/824)   [K
+remote: Compressing objects:  41% (338/824)   [K
+remote: Compressing objects:  42% (347/824)   [K
+remote: Compressing objects:  43% (355/824)   [K
+remote: Compressing objects:  44% (363/824)   [K
+remote: Compressing objects:  45% (371/824)   [K
+remote: Compressing objects:  46% (380/824)   [K
+remote: Compressing objects:  47% (388/824)   [K
+remote: Compressing objects:  48% (396/824)   [K
+remote: Compressing objects:  49% (404/824)   [K
+remote: Compressing objects:  50% (412/824)   [K
+remote: Compressing objects:  51% (421/824)   [K
+remote: Compressing objects:  52% (429/824)   [K
+remote: Compressing objects:  53% (437/824)   [K
+remote: Compressing objects:  54% (445/824)   [K
+remote: Compressing objects:  55% (454/824)   [K
+remote: Compressing objects:  56% (462/824)   [K
+remote: Compressing objects:  57% (470/824)   [K
+remote: Compressing objects:  58% (478/824)   [K
+remote: Compressing objects:  59% (487/824)   [K
+remote: Compressing objects:  60% (495/824)   [K
+remote: Compressing objects:  61% (503/824)   [K
+remote: Compressing objects:  62% (511/824)   [K
+remote: Compressing objects:  63% (520/824)   [K
+remote: Compressing objects:  64% (528/824)   [K
+remote: Compressing objects:  65% (536/824)   [K
+remote: Compressing objects:  66% (544/824)   [K
+remote: Compressing objects:  67% (553/824)   [K
+remote: Compressing objects:  68% (561/824)   [K
+remote: Compressing objects:  69% (569/824)   [K
+remote: Compressing objects:  70% (577/824)   [K
+remote: Compressing objects:  71% (586/824)   [K
+remote: Compressing objects:  72% (594/824)   [K
+remote: Compressing objects:  73% (602/824)   [K
+remote: Compressing objects:  74% (610/824)   [K
+remote: Compressing objects:  75% (618/824)   [K
+remote: Compressing objects:  76% (627/824)   [K
+remote: Compressing objects:  77% (635/824)   [K
+remote: Compressing objects:  78% (643/824)   [K
+remote: Compressing objects:  79% (651/824)   [K
+remote: Compressing objects:  80% (660/824)   [K
+remote: Compressing objects:  81% (668/824)   [K
+remote: Compressing objects:  82% (676/824)   [K
+remote: Compressing objects:  83% (684/824)   [K
+remote: Compressing objects:  84% (693/824)   [K
+remote: Compressing objects:  85% (701/824)   [K
+remote: Compressing objects:  86% (709/824)   [K
+remote: Compressing objects:  87% (717/824)   [K
+remote: Compressing objects:  88% (726/824)   [K
+remote: Compressing objects:  89% (734/824)   [K
+remote: Compressing objects:  90% (742/824)   [K
+remote: Compressing objects:  91% (750/824)   [K
+remote: Compressing objects:  92% (759/824)   [K
+remote: Compressing objects:  93% (767/824)   [K
+remote: Compressing objects:  94% (775/824)   [K
+remote: Compressing objects:  95% (783/824)   [K
+remote: Compressing objects:  96% (792/824)   [K
+remote: Compressing objects:  97% (800/824)   [K
+remote: Compressing objects:  98% (808/824)   [K
+remote: Compressing objects:  99% (816/824)   [K
+remote: Compressing objects: 100% (824/824)   [K
+remote: Compressing objects: 100% (824/824), done.[K
+Receiving objects:   0% (1/2837)   
+Receiving objects:   1% (29/2837)   
+Receiving objects:   2% (57/2837)   
+Receiving objects:   3% (86/2837)   
+Receiving objects:   4% (114/2837)   
+Receiving objects:   5% (142/2837)   
+Receiving objects:   6% (171/2837)   
+Receiving objects:   7% (199/2837)   
+Receiving objects:   8% (227/2837)   
+Receiving objects:   8% (250/2837), 500.00 KiB | 908.00 KiB/s   
+Receiving objects:   9% (256/2837), 1.28 MiB | 1.22 MiB/s   
+Receiving objects:   9% (262/2837), 2.18 MiB | 1.05 MiB/s   
+Receiving objects:   9% (278/2837), 3.42 MiB | 1.10 MiB/s   
+Receiving objects:   9% (279/2837), 4.71 MiB | 1.14 MiB/s   
+Receiving objects:   9% (279/2837), 5.33 MiB | 1.05 MiB/s   
+Receiving objects:   9% (279/2837), 5.93 MiB | 898.00 KiB/s   
+Receiving objects:   9% (279/2837), 7.02 MiB | 925.00 KiB/s   
+Receiving objects:   9% (279/2837), 7.90 MiB | 812.00 KiB/s   
+Receiving objects:   9% (279/2837), 8.30 MiB | 746.00 KiB/s   
+Receiving objects:   9% (279/2837), 9.96 MiB | 970.00 KiB/s   
+Receiving objects:   9% (279/2837), 11.39 MiB | 1.12 MiB/s   
+Receiving objects:   9% (279/2837), 12.55 MiB | 1.12 MiB/s   
+Receiving objects:   9% (279/2837), 13.77 MiB | 1.14 MiB/s   
+Receiving objects:   9% (279/2837), 14.18 MiB | 1.05 MiB/s   
+Receiving objects:   9% (279/2837), 14.61 MiB | 808.00 KiB/s   
+Receiving objects:   9% (279/2837), 15.29 MiB | 731.00 KiB/s   
+Receiving objects:   9% (279/2837), 15.61 MiB | 491.00 KiB/s   
+Receiving objects:   9% (279/2837), 15.74 MiB | 419.00 KiB/s   
+Receiving objects:   9% (279/2837), 16.75 MiB | 551.00 KiB/s   
+Receiving objects:   9% (279/2837), 18.09 MiB | 746.00 KiB/s   
+Receiving objects:  10% (284/2837), 18.09 MiB | 746.00 KiB/s   
+Receiving objects:  11% (313/2837), 18.09 MiB | 746.00 KiB/s   
+Receiving objects:  12% (341/2837), 18.09 MiB | 746.00 KiB/s   
+Receiving objects:  13% (369/2837), 18.73 MiB | 782.00 KiB/s   
+Receiving objects:  13% (395/2837), 18.73 MiB | 782.00 KiB/s   
+Receiving objects:  14% (398/2837), 18.73 MiB | 782.00 KiB/s   
+Receiving objects:  15% (426/2837), 19.04 MiB | 798.00 KiB/s   
+Receiving objects:  16% (454/2837), 19.04 MiB | 798.00 KiB/s   
+Receiving objects:  17% (483/2837), 19.04 MiB | 798.00 KiB/s   
+Receiving objects:  18% (511/2837), 19.04 MiB | 798.00 KiB/s   
+Receiving objects:  19% (540/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  19% (552/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  20% (568/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  21% (596/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  22% (625/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  23% (653/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  24% (681/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  25% (710/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  26% (738/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  27% (766/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  28% (795/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  29% (823/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  30% (852/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  31% (880/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  32% (908/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  33% (937/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  34% (965/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  35% (993/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  36% (1022/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  37% (1050/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  38% (1079/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  39% (1107/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  40% (1135/2837), 19.49 MiB | 861.00 KiB/s   
+Receiving objects:  41% (1164/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  42% (1192/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  43% (1220/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  44% (1249/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  45% (1277/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  46% (1306/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  47% (1334/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  48% (1362/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  49% (1391/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  50% (1419/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  51% (1447/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  52% (1476/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  53% (1504/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  54% (1532/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  55% (1561/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  56% (1589/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  57% (1618/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  58% (1646/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  59% (1674/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  60% (1703/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  61% (1731/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  62% (1759/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  63% (1788/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  64% (1816/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  65% (1845/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  66% (1873/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  67% (1901/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  68% (1930/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  69% (1958/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  70% (1986/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  71% (2015/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  72% (2043/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  73% (2072/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  74% (2100/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  75% (2128/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  76% (2157/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  77% (2185/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  78% (2213/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  79% (2242/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  80% (2270/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  81% (2298/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  82% (2327/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  83% (2355/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  84% (2384/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  85% (2412/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  86% (2440/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  87% (2469/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  88% (2497/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  89% (2525/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  90% (2554/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  91% (2582/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  92% (2611/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  93% (2639/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  94% (2667/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  95% (2696/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  96% (2724/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  97% (2752/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  98% (2781/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects:  99% (2809/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects: 100% (2837/2837), 19.83 MiB | 902.00 KiB/s   
+Receiving objects: 100% (2837/2837), 20.14 MiB | 1.00 MiB/s, done.
+Resolving deltas:   0% (0/1859)   
+Resolving deltas:   2% (51/1859)   
+Resolving deltas:   7% (142/1859)   
+Resolving deltas:   8% (151/1859)   
+Resolving deltas:   9% (169/1859)   
+Resolving deltas:  10% (193/1859)   
+Resolving deltas:  12% (226/1859)   
+Resolving deltas:  14% (273/1859)   
+Resolving deltas:  15% (286/1859)   
+Resolving deltas:  16% (298/1859)   
+Resolving deltas:  17% (317/1859)   
+Resolving deltas:  19% (361/1859)   
+Resolving deltas:  20% (383/1859)   
+Resolving deltas:  21% (408/1859)   
+Resolving deltas:  22% (409/1859)   
+Resolving deltas:  23% (428/1859)   
+Resolving deltas:  24% (447/1859)   
+Resolving deltas:  27% (515/1859)   
+Resolving deltas:  28% (522/1859)   
+Resolving deltas:  29% (546/1859)   
+Resolving deltas:  30% (570/1859)   
+Resolving deltas:  31% (582/1859)   
+Resolving deltas:  33% (626/1859)   
+Resolving deltas:  34% (633/1859)   
+Resolving deltas:  35% (651/1859)   
+Resolving deltas:  36% (683/1859)   
+Resolving deltas:  38% (716/1859)   
+Resolving deltas:  39% (736/1859)   
+Resolving deltas:  40% (760/1859)   
+Resolving deltas:  41% (778/1859)   
+Resolving deltas:  42% (796/1859)   
+Resolving deltas:  43% (815/1859)   
+Resolving deltas:  46% (873/1859)   
+Resolving deltas:  47% (884/1859)   
+Resolving deltas:  48% (896/1859)   
+Resolving deltas:  49% (921/1859)   
+Resolving deltas:  50% (945/1859)   
+Resolving deltas:  51% (953/1859)   
+Resolving deltas:  52% (970/1859)   
+Resolving deltas:  53% (988/1859)   
+Resolving deltas:  54% (1012/1859)   
+Resolving deltas:  57% (1072/1859)   
+Resolving deltas:  58% (1079/1859)   
+Resolving deltas:  59% (1097/1859)   
+Resolving deltas:  60% (1116/1859)   
+Resolving deltas:  61% (1139/1859)   
+Resolving deltas:  62% (1153/1859)   
+Resolving deltas:  63% (1189/1859)   
+Resolving deltas:  64% (1197/1859)   
+Resolving deltas:  65% (1211/1859)   
+Resolving deltas:  66% (1229/1859)   
+Resolving deltas:  67% (1253/1859)   
+Resolving deltas:  68% (1265/1859)   
+Resolving deltas:  69% (1285/1859)   
+Resolving deltas:  70% (1305/1859)   
+Resolving deltas:  71% (1322/1859)   
+Resolving deltas:  72% (1343/1859)   
+Resolving deltas:  76% (1416/1859)   
+Resolving deltas:  81% (1507/1859)   
+Resolving deltas:  82% (1529/1859)   
+Resolving deltas:  83% (1547/1859)   
+Resolving deltas:  84% (1567/1859)   
+Resolving deltas:  85% (1584/1859)   
+Resolving deltas:  86% (1615/1859)   
+Resolving deltas:  87% (1625/1859)   
+Resolving deltas:  89% (1655/1859)   
+Resolving deltas:  90% (1676/1859)   
+Resolving deltas:  91% (1695/1859)   
+Resolving deltas:  92% (1728/1859)   
+Resolving deltas:  93% (1732/1859)   
+Resolving deltas:  94% (1750/1859)   
+Resolving deltas:  95% (1769/1859)   
+Resolving deltas:  96% (1785/1859)   
+Resolving deltas:  97% (1804/1859)   
+Resolving deltas:  98% (1825/1859)   
+Resolving deltas:  99% (1847/1859)   
+Resolving deltas: 100% (1859/1859)   
+Resolving deltas: 100% (1859/1859), done.
+remote: Total 2837 (delta 1859), reused 2832 (delta 1856), pack-reused 0[K
+Checking connectivity... done.
+Checking out files:   9% (45/484)   
+Checking out files:  10% (49/484)   
+Checking out files:  11% (54/484)   
+Checking out files:  12% (59/484)   
+Checking out files:  13% (63/484)   
+Checking out files:  14% (68/484)   
+Checking out files:  15% (73/484)   
+Checking out files:  16% (78/484)   
+Checking out files:  16% (80/484)   
+Checking out files:  17% (83/484)   
+Checking out files:  18% (88/484)   
+Checking out files:  19% (92/484)   
+Checking out files:  20% (97/484)   
+Checking out files:  21% (102/484)   
+Checking out files:  22% (107/484)   
+Checking out files:  23% (112/484)   
+Checking out files:  24% (117/484)   
+Checking out files:  25% (121/484)   
+Checking out files:  25% (122/484)   
+Checking out files:  26% (126/484)   
+Checking out files:  27% (131/484)   
+Checking out files:  28% (136/484)   
+Checking out files:  29% (141/484)   
+Checking out files:  30% (146/484)   
+Checking out files:  31% (151/484)   
+Checking out files:  32% (155/484)   
+Checking out files:  33% (160/484)   
+Checking out files:  34% (165/484)   
+Checking out files:  34% (169/484)   
+Checking out files:  35% (170/484)   
+Checking out files:  36% (175/484)   
+Checking out files:  37% (180/484)   
+Checking out files:  38% (184/484)   
+Checking out files:  39% (189/484)   
+Checking out files:  40% (194/484)   
+Checking out files:  41% (199/484)   
+Checking out files:  42% (204/484)   
+Checking out files:  43% (209/484)   
+Checking out files:  44% (213/484)   
+Checking out files:  45% (218/484)   
+Checking out files:  46% (223/484)   
+Checking out files:  47% (228/484)   
+Checking out files:  48% (233/484)   
+Checking out files:  49% (238/484)   
+Checking out files:  50% (242/484)   
+Checking out files:  51% (247/484)   
+Checking out files:  52% (252/484)   
+Checking out files:  53% (257/484)   
+Checking out files:  54% (262/484)   
+Checking out files:  55% (267/484)   
+Checking out files:  56% (272/484)   
+Checking out files:  57% (276/484)   
+Checking out files:  58% (281/484)   
+Checking out files:  59% (286/484)   
+Checking out files:  60% (291/484)   
+Checking out files:  61% (296/484)   
+Checking out files:  62% (301/484)   
+Checking out files:  63% (305/484)   
+Checking out files:  64% (310/484)   
+Checking out files:  65% (315/484)   
+Checking out files:  65% (316/484)   
+Checking out files:  66% (320/484)   
+Checking out files:  67% (325/484)   
+Checking out files:  68% (330/484)   
+Checking out files:  69% (334/484)   
+Checking out files:  70% (339/484)   
+Checking out files:  71% (344/484)   
+Checking out files:  72% (349/484)   
+Checking out files:  73% (354/484)   
+Checking out files:  74% (359/484)   
+Checking out files:  75% (363/484)   
+Checking out files:  76% (368/484)   
+Checking out files:  77% (373/484)   
+Checking out files:  77% (377/484)   
+Checking out files:  78% (378/484)   
+Checking out files:  79% (383/484)   
+Checking out files:  80% (388/484)   
+Checking out files:  81% (393/484)   
+Checking out files:  82% (397/484)   
+Checking out files:  83% (402/484)   
+Checking out files:  84% (407/484)   
+Checking out files:  85% (412/484)   
+Checking out files:  86% (417/484)   
+Checking out files:  87% (422/484)   
+Checking out files:  88% (426/484)   
+Checking out files:  89% (431/484)   
+Checking out files:  90% (436/484)   
+Checking out files:  90% (437/484)   
+Checking out files:  91% (441/484)   
+Checking out files:  92% (446/484)   
+Checking out files:  93% (451/484)   
+Checking out files:  94% (455/484)   
+Checking out files:  95% (460/484)   
+Checking out files:  96% (465/484)   
+Checking out files:  97% (470/484)   
+Checking out files:  98% (475/484)   
+Checking out files:  99% (480/484)   
+Checking out files: 100% (484/484)   
+Checking out files: 100% (484/484), done.
+git: 'submodule' is not a git command. See 'git --help'.
+2015-07-21 18:19:37.0020|INFO|thread: 1|CommandLineHandler|Parsing command line arguments:http://github-windows.s3.amazonaws.com/GitHub.application
+2015-07-21 18:19:37.1170|INFO|thread: 1|AppInstanceCommunicator|An instance of GitHub for Windows is already running. Checking to see if we should pass control...
+2015-07-21 18:19:37.1170|INFO|thread: 1|AppInstanceCommunicator|Not a call to clone a repo, so just run the app as usual.
+2015-07-21 18:19:37.1570|INFO|thread: 5|StartupLogging| #########################################
+2015-07-21 18:19:37.1570|INFO|thread: 5|StartupLogging| GitHub for Windows started. VERSION: 2.14.7.1
+2015-07-21 18:19:37.1570|INFO|thread: 5|StartupLogging| Build version: b86a398244b1616c5ff52246cf77d6a56cb1f8f9
+2015-07-21 18:19:37.1570|INFO|thread: 5|StartupLogging| ***************************************
+2015-07-21 18:19:37.1570|INFO|thread: 5|StartupLogging| ***                                 ***
+2015-07-21 18:19:37.1570|INFO|thread: 5|StartupLogging| ***                                 ***
+2015-07-21 18:19:37.1570|INFO|thread: 5|StartupLogging| ***        Have a problem?          ***
+2015-07-21 18:19:37.1570|INFO|thread: 5|StartupLogging| ***    Email support@github.com     ***
+2015-07-21 18:19:37.1570|INFO|thread: 5|StartupLogging| ***      and include this file      ***
+2015-07-21 18:19:37.1570|INFO|thread: 5|StartupLogging| ***                                 ***
+2015-07-21 18:19:37.1570|INFO|thread: 5|StartupLogging| ***                                 ***
+2015-07-21 18:19:37.1570|INFO|thread: 5|StartupLogging| ***************************************
+2015-07-21 18:19:37.1645|INFO|thread: 5|StartupLogging| OS Version: Windows 8 6.2.9200.0 amd64
+2015-07-21 18:19:37.1645|INFO|thread: 5|StartupLogging| CLR Version: 4.0.30319.18449
+2015-07-21 18:19:37.1645|INFO|thread: 5|StartupLogging| Current culture: en-US
+2015-07-21 18:19:37.1645|INFO|thread: 5|StartupLogging| Terminal Services session: no
+2015-07-21 18:19:37.1645|INFO|thread: 5|StartupLogging| Location: C:\Users\Chandrababu\AppData\Local\Apps\2.0\PAGYG88E.8EY\3LYA2KEO.MXN\gith..tion_317444273a93ac29_0002.000e_114545a4195e25d4\GitHub.exe
+2015-07-21 18:19:37.9746|INFO|thread: 4|HardwareRenderingHelper|Making a WMI query to discover any video PNPID entries
+2015-07-21 18:19:38.7396|INFO|thread: 1|HardwareRenderingHelper|Your video card appears to support hardware rendering. If this isn't the case and you see glitches
+2015-07-21 18:19:38.7396|INFO|thread: 1|HardwareRenderingHelper|set the GH_FORCE_SW_RENDERING environment variable to 1
+2015-07-21 18:19:38.7396|INFO|thread: 1|App|Checking whether application is network deployed.
+2015-07-21 18:19:38.7546|INFO|thread: 5|StartupLogging| ActivationUri: https://github-windows.s3.amazonaws.com/GitHub.application
+2015-07-21 18:19:38.8471|INFO|thread: 5|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2015-07-21 18:19:38.8471|INFO|thread: 5|GitEnvironment|PATH is C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Chandrababu\AppData\Local\Apps\2.0\PAGYG88E.8EY\3LYA2KEO.MXN\gith..tion_317444273a93ac29_0002.000e_114545a4195e25d4;C:\Users\Chandrababu\AppData\Local\GitHub\lfs-amd64_0.5.1;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\Program Files (x86)\Google\Chrome\Application;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Live\Shared
+2015-07-21 18:19:38.8471|INFO|thread: 5|StartupLogging| =====================================================
+2015-07-21 18:19:38.8471|INFO|thread: 5|StartupLogging|  DIAGNOSTICS                                        |
+2015-07-21 18:19:38.8471|INFO|thread: 5|StartupLogging| =====================================================
+2015-07-21 18:19:38.8471|INFO|thread: 5|StartupLogging| Git Extracted: 'False:
+2015-07-21 18:19:38.8471|ERROR|thread: 5|StartupLogging| MISSING PortableGit Dir: 'C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad'
+2015-07-21 18:19:38.8971|ERROR|thread: 5|PortableGitManager|git.exe doesn't exist at 'C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe'
+2015-07-21 18:19:38.8971|ERROR|thread: 5|StartupLogging| MISSING Git Executable: 'C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe'
+2015-07-21 18:19:38.8971|ERROR|thread: 5|StartupLogging| MISSING PATH!!: 'C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd'
+2015-07-21 18:19:38.8971|ERROR|thread: 5|StartupLogging| MISSING PATH!!: 'C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin'
+2015-07-21 18:19:38.8971|ERROR|thread: 5|StartupLogging| MISSING PATH!!: 'C:\Users\Chandrababu\AppData\Local\GitHub\lfs-amd64_0.5.1'
+2015-07-21 18:19:38.8971|INFO|thread: 5|StartupLogging| ----------------------------------------------------
+2015-07-21 18:19:38.8971|INFO|thread: 5|StartupLogging| PATH: C:\Program Files (x86)\Google\Chrome\Application;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Live\Shared
+2015-07-21 18:19:39.1346|INFO|thread: 5|StartupLogger|Proxy information: (None)
+2015-07-21 18:19:39.1346|INFO|thread: 5|StartupLogger|Couldn't fetch creds for proxy
+2015-07-21 18:19:39.5971|INFO|thread: 1|ClickOnceAppIconHelper|Updating registry with our application icon 'C:\Users\Chandrababu\AppData\Local\Apps\2.0\PAGYG88E.8EY\3LYA2KEO.MXN\gith..tion_317444273a93ac29_0002.000e_114545a4195e25d4\Images\App.ico'
+2015-07-21 18:19:43.1978|INFO|thread: 5|ShortcutManager|Shortcut 'C:\Users\Chandrababu\AppData\Local\GitHub\GitHub.appref-ms' missing. Assuming a first run.
+2015-07-21 18:19:43.2078|INFO|thread: 5|ShortcutManager|Copying the Start Menu shortcut 'C:\Users\Chandrababu\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\GitHub, Inc\GitHub.appref-ms' to 'C:\Users\Chandrababu\AppData\Local\GitHub\GitHub.appref-ms'
+2015-07-21 18:19:43.3078|ERROR|thread: 5|ShortcutManager|Error occurred copying the start menu shortcut
+System.IO.IOException: The process cannot access the file 'C:\Users\Chandrababu\AppData\Local\GitHub\GitHub.appref-ms' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at GitHub.IO.GitHubFile.CopyTo(String target, Boolean overwrite)
+   at GitHub.Helpers.ShortcutManager.CreateGitHubClickOnceShortcut()
+2015-07-21 18:19:44.0331|INFO|thread: 5|ShortcutManager|Saving the Git Shell shortcut C:\Users\Chandrababu\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\GitHub, Inc\Git Shell.lnk
+2015-07-21 18:19:44.0706|INFO|thread: 5|ShortcutManager|Saving the Git Shell shortcut C:\Users\Chandrababu\Desktop\Git Shell.lnk
+2015-07-21 18:19:44.2556|INFO|thread: 5|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Chandrababu\AppData\Local\Apps\2.0\PAGYG88E.8EY\3LYA2KEO.MXN\gith..tion_317444273a93ac29_0002.000e_114545a4195e25d4\7za.exe', Args: 'x -y "-oC:\Users\Chandrababu\AppData\Local\GitHub\2vhsb0s1.ljd.deleteme" "C:\Users\Chandrababu\AppData\Local\Apps\2.0\PAGYG88E.8EY\3LYA2KEO.MXN\gith..tion_317444273a93ac29_0002.000e_114545a4195e25d4\PortableGit.7z"', Working Directory: 
+2015-07-21 18:19:44.2981|INFO|thread: 5|PortablePackageManager|Extracting PortableGit.7z is (so far) successful
+2015-07-21 18:19:57.2173|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.ShellViewModel.
+2015-07-21 18:19:57.2173|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.DashboardViewModel.
+2015-07-21 18:20:04.0926|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Chandrababu\AppData\Local\Apps\2.0\PAGYG88E.8EY\3LYA2KEO.MXN\gith..tion_317444273a93ac29_0002.000e_114545a4195e25d4\7za.exe', Args: 'x -y "-oC:\Users\Chandrababu\AppData\Local\GitHub\qqmcsvtw.x0t.deleteme" "C:\Users\Chandrababu\AppData\Local\Apps\2.0\PAGYG88E.8EY\3LYA2KEO.MXN\gith..tion_317444273a93ac29_0002.000e_114545a4195e25d4\gitignore.7z"', Working Directory: 
+2015-07-21 18:20:04.1051|INFO|thread: 1|PortablePackageManager|Extracting gitignore.7z is (so far) successful
+2015-07-21 18:20:08.9458|INFO|thread:18|PortablePackageManager|GitHub.IO.ObservableProcess
+2015-07-21 18:20:08.9828|WARN|thread:18|LoginCache|Could not get login for host 'GitHub.HostAddress'
+System.Collections.Generic.KeyNotFoundException: The given key 'login:github.com' was not present in the cache.
+2015-07-21 18:20:08.9958|WARN|thread:18|LoginCache|Could not get login for host 'GitHub.HostAddress'
+System.Collections.Generic.KeyNotFoundException: The given key 'login:null' was not present in the cache.
+2015-07-21 18:20:10.8650|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.WelcomeWizardViewModel.
+2015-07-21 18:20:44.8323|INFO|thread: 1|RepositoryHost|Log in from cache for login 'chandraGanabathy' to host 'https://api.github.com/' SUCCEEDED
+2015-07-21 18:20:45.6164|INFO|thread: 1|RepositoryHosts|Log in to GitHub.com with username 'chandra.ganabathy@gmail.com' SUCCEEDED
+2015-07-21 18:20:57.0528|INFO|thread:38|ConfigurationFactory|Didn't find '~/.gitconfig', creating one.
+2015-07-21 18:20:57.2228|INFO|thread:38|GitConfig|Setting default global git configuration for user.name b/c it was blank. value = Chandra Ganabathy
+2015-07-21 18:20:57.3639|INFO|thread:38|GitConfig|Setting default global git configuration for user.email b/c it was blank. value = chandra.ganabathy@gmail.com
+2015-07-21 18:21:05.2248|INFO|thread: 8|GitConfig|Saving global git configuration for user.name and user.email
+2015-07-21 18:21:10.4495|INFO|thread: 1|ReactiveScreen|Deactivating GitHub.ViewModels.WelcomeWizardViewModel.
+2015-07-21 18:21:10.4605|INFO|thread: 1|ReactiveScreen|Closed GitHub.ViewModels.WelcomeWizardViewModel.
+2015-07-21 18:22:15.5479|ERROR|thread: 4|StartupManager|Could not install system derived certificate authority bundle, falling back to stock
+System.IO.IOException: The process cannot access the file 'C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\curl-ca-bundle.cache' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+   at GitHub.IO.GitHubFile.WriteAllText(String contents, Encoding encoding)
+   at GitHub.Helpers.MsysGitCertificateInstaller.<GetStockCertificates>d__17.MoveNext()
+   at System.Linq.Enumerable.<ConcatIterator>d__71`1.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__0.MoveNext()
+   at System.Linq.Enumerable.<DistinctIterator>d__81`1.MoveNext()
+   at GitHub.Helpers.MsysGitCertificateInstaller.<GenerateCustomCertificateBundle>b__3()
+   at System.Reactive.Linq.ObservableImpl.Defer`1.Eval()
+   at System.Reactive.Linq.ObservableImpl.Defer`1._.Run()
+2015-07-21 18:22:16.6930|INFO|thread: 5|StartupSequence|Took 152603ms to Update certificate bundle from system store
+2015-07-21 18:22:16.7100|INFO|thread: 4|PortablePackageManager|Already extracted lfs-amd64.7z, returning 100%
+2015-07-21 18:22:16.7200|INFO|thread: 4|PortablePackageManager|GitHub.IO.ObservableProcess
+2015-07-21 18:22:16.7200|INFO|thread: 1|GitClient|Installing git lfs filters
+2015-07-21 18:22:16.7720|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2015-07-21 18:22:16.7720|INFO|thread: 1|GitEnvironment|PATH is C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Chandrababu\AppData\Local\Apps\2.0\PAGYG88E.8EY\3LYA2KEO.MXN\gith..tion_317444273a93ac29_0002.000e_114545a4195e25d4;C:\Users\Chandrababu\AppData\Local\GitHub\lfs-amd64_0.5.1;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-07-21 18:22:16.7720|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'lfs init ', Working Directory: C:\Users\Chandrababu\AppData\Local\Temp\
+2015-07-21 18:22:21.3651|INFO|thread:29|ApplicationShellInitializer|Running post login tasks. ~/.gitconfig is set up with user.name = 'Chandra Ganabathy' and user.email = 'chandra.ganabathy@gmail.com'
+2015-07-21 18:22:21.7021|INFO|thread: 8|SSHProcessManager|Starting ssh-agent.exe
+2015-07-21 18:22:23.0553|INFO|thread:27|GitEnvironment|Process set up with this SSH Agent info: 4900:/tmp/ssh-TEzm3FECzPbM/agent.1864
+2015-07-21 18:22:23.0553|INFO|thread:27|GitEnvironment|PATH is C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Chandrababu\AppData\Local\Apps\2.0\PAGYG88E.8EY\3LYA2KEO.MXN\gith..tion_317444273a93ac29_0002.000e_114545a4195e25d4;C:\Users\Chandrababu\AppData\Local\GitHub\lfs-amd64_0.5.1;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-07-21 18:22:23.0833|INFO|thread:27|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\ssh-add.exe', Args: '"C:\Users\Chandrababu\.ssh\github_rsa"', Working Directory: C:\Users\Chandrababu\AppData\Local\Temp\
+2015-07-21 18:22:23.2333|ERROR|thread: 8|RemoteSSHKeyChain|Failed to set up SSH Agent
+System.AggregateException: One or more errors occurred. ---> GitHub.IO.ProcessException: C:\Users\Chandrababu\.ssh\github_rsa: No such file or directory
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at GitHub.PortableGit.Helpers.SSHKeyHelper.<>c__DisplayClasse.<StartSshAgent>b__b()
+   at System.Reactive.Linq.QueryLanguage.<>c__DisplayClass13b.<>c__DisplayClass13d.<ToAsync>b__13a()
+---> (Inner Exception #0) GitHub.IO.ProcessException: C:\Users\Chandrababu\.ssh\github_rsa: No such file or directory<---
+
+2015-07-21 18:22:23.3763|INFO|thread: 8|SSHKeyHelper|Couldn't find SSH key pair, generating new ones
+2015-07-21 18:22:23.4033|INFO|thread: 8|GitEnvironment|Process set up with this SSH Agent info: 4900:/tmp/ssh-TEzm3FECzPbM/agent.1864
+2015-07-21 18:22:23.4033|INFO|thread: 8|GitEnvironment|PATH is C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Chandrababu\AppData\Local\Apps\2.0\PAGYG88E.8EY\3LYA2KEO.MXN\gith..tion_317444273a93ac29_0002.000e_114545a4195e25d4;C:\Users\Chandrababu\AppData\Local\GitHub\lfs-amd64_0.5.1;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-07-21 18:22:23.4033|INFO|thread: 8|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\ssh-keygen.exe', Args: '-t rsa -N "" -f "C:\Users\Chandrababu\.ssh\github_rsa"', Working Directory: C:\Users\Chandrababu\AppData\Local\Temp\
+2015-07-21 18:22:26.2977|INFO|thread:38|ApiClient|About to add SSH Key: GitHub for Windows - jeyanthi - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2tRBJrvMxJ4j5IGQu3/OVIdIk+U+afGbz7w/vPOQ0d94piUaUNGHTmsgDpg+jbojQezvSZ/x2GgBN63HHTN7V/aloxbAuXA1M97fM/uJ8FH9+gqm3oIKO4EWWgInPtTkeJCIoyKanXnieJrXQj5At6UcsogeyuIt0/0ATzesZ/qNrX1swUlVO+OGfoBvK3N9v6Cfb55XlQP0+X6GhPFmMNNa7x+hZ3K2P91chQ+vdGiOulfRfabFo6W9UvcpFnKZFhi9t8FjUkZLIcNKK5+B1i3bzy7+iFKudmoIHznfPfr7w1QTpbzoYMFqQubY4ArJkfQ5C2bi8+bquyhgpncaF Chandrababu@JEYANTHI
+
+2015-07-21 18:24:40.7505|INFO|thread: 1|RepositoryModel|Cloning repo https://github.com/lsitaraman/parentorbit.git
+2015-07-21 18:24:40.8015|INFO|thread: 1|GitLfsSmudgeTail|Setting Git LFS smudge progress environment variable
+2015-07-21 18:24:40.8375|INFO|thread: 1|RepositoryModel|Cloning 'https://github.com/lsitaraman/parentorbit.git' to 'parentorbit' in directory 'C:\
+2015-07-21 18:24:40.8635|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 4900:/tmp/ssh-TEzm3FECzPbM/agent.1864
+2015-07-21 18:24:40.8635|INFO|thread: 1|GitEnvironment|PATH is C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\cmd;C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin;C:\Users\Chandrababu\AppData\Local\Apps\2.0\PAGYG88E.8EY\3LYA2KEO.MXN\gith..tion_317444273a93ac29_0002.000e_114545a4195e25d4;C:\Users\Chandrababu\AppData\Local\GitHub\lfs-amd64_0.5.1;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;C:\WINDOWS\System32
+2015-07-21 18:24:40.8635|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\Chandrababu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin\git.exe', Args: 'clone --progress --recursive  --  "https://github.com/lsitaraman/parentorbit.git" "parentorbit" ', Working Directory: C:\
+2015-07-21 18:24:40.9895|INFO|thread:19|DashboardViewModel|Selected repository 'lsitaraman/parentorbit'
+2015-07-21 18:24:44.5530|INFO|thread:19|DashboardViewModel|Took 3558ms to create repository for location: C:\parentorbit
+2015-07-21 18:24:45.5491|INFO|thread:15|BackgroundFetcher|Calculated a refresh period for lsitaraman/parentorbit of 3600 seconds
+2015-07-21 18:24:45.5491|INFO|thread:15|BackgroundFetcher|Added a delay for lsitaraman/parentorbit of 109 milliseconds
+2015-07-21 18:24:46.6232|INFO|thread: 1|RepositoryViewModel|Refresh of Git data skipped because clone is in progress
+2015-07-21 18:24:46.6772|ERROR|thread: 1|SyncButtonViewModel|Branch was not updated before refresh was called
+2015-07-21 18:25:01.7081|INFO|thread: 1|RepositoryViewModel|Refresh of Git data skipped because clone is in progress
+2015-07-21 18:25:36.3708|INFO|thread:33|GitLfsSmudgeTail|Cleaning up Git LFS smudge progress environment variable
