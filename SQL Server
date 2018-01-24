@@ -1,11 +1,3 @@
-SQL Combined values
-
-DECLARE @listStr VARCHAR(MAX)
-SELECT @listStr = COALESCE(@listStr+',' ,'') + char(39) + DeskCd + CHAR(39)
-FROM Reports
-SELECT @listStr
-
-
 ***Find Columns****
 
 SELECT t.name AS table_name, SCHEMA_NAME(schema_id) AS schema_name,
@@ -16,6 +8,6 @@ SELECT t.name AS table_name, SCHEMA_NAME(schema_id) AS schema_name,
     ORDER BY schema_name, table_name;
     
     
-    find character inside the stored procedure.
+To find find character inside SP.
     SELECT Name FROM sys.procedures
 	WHERE OBJECT_DEFINITION(object_id) LIKE '%ebCustomer%'
