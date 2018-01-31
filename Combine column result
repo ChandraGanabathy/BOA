@@ -1,6 +1,0 @@
-SQL combined Values : 'DTD',FTD',TFD',SID',CPM','COD'
-DECLARE @listStr VARCHAR(MAX)
-SELECT @listStr = COALESCE(@listStr+',' ,'') + char(39) + DeskCd + CHAR(39)
-FROM Reports
-
-SELECT @listStr
