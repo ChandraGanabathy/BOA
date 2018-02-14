@@ -1,0 +1,28 @@
+    /// <summary>
+		///   Creates a StringDictionary from an IEnumerable<T> according to specified key selector and element selector functions.
+		/// </summary>
+		/// <typeparam name="T"></typeparam>
+		/// <param name="source">An IEnumerable<T> to create a StringDictionary from.</param>
+		/// <param name="keySelector">A function to extract a key from each element. Must return a string</param>
+		/// <param name="elementSelector">A transform function to produce a result element value from each element. Must return a string</param>
+		/// <returns></returns>
+		public static StringDictionary ToSDictionary<T>(this IEnumerable<T> source, Func<T, string> keySelector, Func<T, string> elementSelector)
+		{
+			var sd = new StringDictionary();
+
+			foreach (var element in source)
+			{
+				sd[keySelector(element)] = elementSelector(element);
+			}
+
+			return sd;
+		}  
+    
+    
+    
+    ***************Calling Type*****************
+    var query = mapTypes.Tables[0].AsEnumerable();
+    var groupedByCode = query.ToSDictionary(result => result.Field<string>("SourceValue"),
+            result => result.Field<string>("DestinationValue"));
+    
+    
