@@ -1,0 +1,4 @@
+List<string> lst = new List<string>(){"chandra","babu"};
+
+List<string> lstwhere = new List<string>(){"chandra","babu","Curran", "James"};
+lstwhere.Where(e=>lst.Contains(e)).ToList().Count.Dump();
