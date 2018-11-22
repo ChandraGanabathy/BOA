@@ -1,0 +1,300 @@
+ /// <summary>
+    ///		
+    /// 
+    /// http://joshclose.github.io/CsvHelper/
+    /// 
+    /// </summary>
+    /// <example>
+    /// 		using (var textReader = File.OpenText("Brazil.csv"))
+    ///		using (var csv = new CsvReader(textReader))
+    ///		{
+    ///			csv.Configuration.TrimFields = true;
+    ///			csv.Configuration.TrimHeaders = true;
+    ///			using (var reader = new CsvDataReader(csv))
+    ///			{
+    ///				var copy = new SqlBulkCopy(@"Server=.\SQLEXPRESS;Integrated Security=True;Database=MUFG");
+    ///              copy.DestinationTableName = "S_Futures3";
+    ///				copy.WriteToServer(reader);
+    ///			}
+    ///		}
+    ///	</example>
+    ///		
+    public class CsvDataReader : DbDataReader
+    {
+        private readonly CsvReader _csv;
+
+        private Dictionary<string, int> _fieldsByName = new Dictionary<string, int>();
+        private Dictionary<int, object> _fixedFieldsByOrdinal = new Dictionary<int, object>();
+        private IEnumerable<KeyValuePair<string, object>> _fixedFields = null;
+
+        private List<string> _fixedFieldHeaders = null;
+        //private readonly ILog _logger = null;
+
+        readonly ICsvDataReaderConfiguration _config;
+        readonly Dictionary<string, string> ColumnNameByFieldName = new Dictionary<string, string>();
+
+        public CsvDataReader(CsvReader csv, ICsvDataReaderConfiguration config = null)
+        {
+            _csv = csv;
+            _csv.ReadHeader();
+            TotalRows = 0;
+
+            // for some reason, despite the TrimHeader configuration flag being set, the headers are not being trimmed, so we'll handle it ourselves.
+            // (ToPascal method also trims, but we don't always go through that)
+            // IBMMOR - 463
+            _fixedFieldHeaders = _csv.FieldHeaders.Select(n => n.Trim()).ToList();  
+            _config = config ?? new DummyConfig();
+
+            _config.FieldNamesConfig(ColumnNameByFieldName);
+            //_logger = logger ?? LoggerFactoryStatic.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        }
+
+        class DummyConfig : ICsvDataReaderConfiguration
+        {
+            public void FieldNamesConfig(IDictionary<string, string> dict)
+            {
+                return;
+            }
+
+            public string MakeColumnName(string name)
+            {
+                return name;
+            }
+
+            public FooterType FooterTypeInFile
+            {
+                get { return FooterType.Hashed; }
+            }
+
+        }
+
+
+
+        public void AddFixedFields(IEnumerable<KeyValuePair<string, object>> fixedFields)
+        {
+            _fixedFields = fixedFields;
+
+            if (fixedFields != null)
+                foreach (var kvp in fixedFields)
+                    this.AddFixedField(kvp.Key, kvp.Value);
+        }
+
+
+        private const int startFixedOrdinal = 999;
+        private int nextOrdinal = startFixedOrdinal;
+        internal int AddFixedField(string key, object value)
+        {
+            ++nextOrdinal;
+            _fieldsByName.Add(key, nextOrdinal);
+            if (value as string == "_") value = null;       // will be converted to RowNum
+            _fixedFieldsByOrdinal.Add(nextOrdinal, value);
+
+            return nextOrdinal;
+
+        }
+
+        public long TotalRows { get; internal set; }
+
+        /// <summary>
+        /// Debugging tool for solving mismatched columns
+        /// </summary>
+        /// <param name="copier"></param>
+        /// <param name="connection"></param>
+        /// <remarks>
+        /// call this function  ifyou are getting "System.InvalidOperationException: 'The given ColumnMapping does not match up with any column in the source or destination.'
+        // exception on the WriteToServer.  It will log mismatchings, in the form:
+        // WARN  BTMU.ETL.CsvDataReader [(null)] - ColumnMappings error Dest Columns but not  Table: RiskFactor
+        /// </remarks>
+        internal void TestMappings(SqlBulkCopy copier, SqlConnection connection, IRunStatus runstatus)
+        {
+            var srcCols = new List<string>();
+            var destCols = new List<string>();
+
+            bool explain1 = false;
+            bool explain2 = false;
+            bool explain3 = false;
+
+            foreach (SqlBulkCopyColumnMapping col in copier.ColumnMappings)
+            {
+                srcCols.Add(col.SourceColumn);
+                destCols.Add(col.DestinationColumn);
+            }
+
+            foreach (var name in _fieldsByName.Keys)
+                srcCols.Add(name);
+
+
+            string[] filter = new string[3];
+            var tableparts = copier.DestinationTableName.Split('.');
+            if (tableparts.Length == 2)
+            {
+                filter[1] = tableparts[0];
+                filter[2] = tableparts[1];
+            }
+            else
+                filter[2] = tableparts[0];
+
+            ETLDAL oETLDAL = new ETLDAL(runstatus);
+            var tableCols = oETLDAL.GetSchemaByTable(filter);
+
+            //if (connection.State != ConnectionState.Open)
+            //    connection.Open();
+            //var sch = connection.GetSchema("Columns", filter);
+            //var tableCols = sch.Rows.Cast<DataRow>().Select(dr => dr.ReadAsString("COLUMN_NAME")).ToList();
+
+            foreach (var col in _fixedFieldHeaders)
+            {
+                if (!srcCols.Contains(col))
+                {
+                    runstatus.Logger.Warn(null, "ColumnMappings error Header but not Source Columns : " + col);
+                    explain1 = true;
+                }
+            }
+
+            // Source columns but not FieldHeaders should never happen.
+
+            foreach (var col in tableCols)
+            {
+                if (!destCols.Contains(col))
+                {
+                    runstatus.Logger.Warn(null, "ColumnMappings error Table but not Dest Columns : " + col);
+                    explain2 = true;
+                }
+            }
+
+            foreach (var col in destCols)
+            {
+                if (!tableCols.Contains(col))
+                {
+                    runstatus.Logger.Warn(null, "ColumnMappings error Dest Columns but not  Table: " + col);
+                    explain3 = true;
+                }
+            }
+
+            if (explain1)
+            {
+                runstatus.Logger.Info("", "'Header but not Source Columns' occurs when the CSV file has a header for a column which is not specified in the SqlBulkCopy objects's mapping. " +
+                                 " This will happen only if a CsvClassMap class is used and is out-of-sync with the CSV file.  If a CsvClassMap is not used, the mappings come from the CSV file" +
+                                 " and would have to match.");
+            }
+
+            if (explain2)
+            {
+                runstatus.Logger.Info("",
+                    "'Table but not Dest Columns' occurs when the DB table has a column which is not specified in the SqlBulkCopy objects's mapping. " +
+                    "The mapping can come from either a CsvClassMap object or from the CSV itself.");
+            }
+
+            if (explain3)
+            {
+                runstatus.Logger.Info("",
+                    "'Dest Columns but not  Table' occurs when the SqlBulkCopy objects's mapping has a column which is not in the DB table. " +
+                    "The mapping can come from either a CsvClassMap object or from the CSV itself.   This usually indicates a spurious column was included in the CSV file.");
+            }
+
+        }
+
+        public override object GetValue(int ordinal)
+        {
+            if (ordinal > startFixedOrdinal)
+            {
+                return _fixedFieldsByOrdinal[ordinal] ?? TotalRows;     // If fixed field is null, return RowNum.  
+            }
+
+            var text = _csv[ordinal];
+            return text == String.Empty ? null : text;
+        }
+
+        public override int FieldCount
+        {
+            get { return _fixedFieldHeaders.Count + _fieldsByName.Count; }
+        }
+        public override bool Read()
+        {
+            TotalRows++;
+            return _csv.Read();
+        }
+
+        public override int GetOrdinal(string name)
+        {
+            name = CsvNameByProperty[name] ?? name;
+
+            int inx = _fixedFieldHeaders.IndexOf(name);
+            if (inx == -1 && !_fieldsByName.TryGetValue(name, out inx))
+            {
+                if (name == "RowNum)")
+                {
+                    inx = AddFixedField("RowNum", "_");
+                }
+                else
+                    inx = -1;
+            }
+            return inx;
+        }
+
+        internal void RegisterClassMap(Type mapClass)
+        {
+            _csv.Configuration.RegisterClassMap(mapClass);
+            ReverseMap(mapClass);
+        }
+
+
+        StringDictionary CsvNameByProperty = new StringDictionary();
+        StringDictionary PropertyByCsvName = new StringDictionary();
+
+        void ReverseMap(Type mapClass)
+        {
+            var recType = ETLExt.GetRecordType(mapClass);
+            foreach (var pm in _csv.Configuration.Maps[recType].PropertyMaps)
+            {
+                var col = pm.Data.Names.Names.First();
+                CsvNameByProperty.Add(pm.Data.Property.Name, col);
+                PropertyByCsvName.Add(col, pm.Data.Property.Name);
+            }
+        }
+
+        public string PropertyFromColumnName(string name)
+        {
+            return PropertyByCsvName[name];
+        }
+
+        public override void Close()
+        {
+            _isClosed = true;
+        }
+
+
+        public void MapColumns(SqlBulkCopyColumnMappingCollection col)
+        {
+            IEnumerable<string> fields;
+            if (_fixedFields == null)
+                fields = _fixedFieldHeaders;
+            else
+                fields = _fixedFieldHeaders.Concat(_fixedFields.Select(kvp => kvp.Key));
+
+            foreach (var src in fields)
+            {
+                if (!String.IsNullOrWhiteSpace(src))
+                {
+                    string dest;
+                    if (!ColumnNameByFieldName.TryGetValue(src, out dest))      // if it's a special case
+                         dest = _config.MakeColumnName(src);
+                    col.Add(src, dest);
+                }
+            }
+        }
+        
+    }
+
+    public interface ICsvDataReaderConfiguration
+    {
+
+        // This added the list of "special case" CSV column name to DB column name translations.
+        // Standard conversion are performed in MakeColumnName()
+        void FieldNamesConfig(IDictionary<string, string> dict);
+
+        // Transforms CSV file field names to DB columns names (Standard conversions)
+        string MakeColumnName(string name);
+        FooterType FooterTypeInFile { get; }
+
+    }
