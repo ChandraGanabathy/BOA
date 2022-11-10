@@ -1,0 +1,17 @@
+var running  = await (
+				from a in db.TaskImports
+				where a.Status == eQueueStatus.INPROGRESS && a.DateStarted != null && a.DateCompleted == null
+				      && a.TenantId != null
+				orderby a.Id
+				select a.TenantId)
+				.Distinct()
+				.ToArrayAsync();
+
+
+			//grab all that are queued for tenants which do not currently already have an job running.
+			var queued = await (
+                from a in db.TaskImports
+				where a.Status == eQueueStatus.QUEUED && a.DateStarted == null && a.DateCompleted == null
+                && !running.Contains(a.TenantId)
+				orderby a.Id
+                select a).ToListAsync();
