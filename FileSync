@@ -1,0 +1,13 @@
+$source="C:\TestPython\data\"
+$dest="C:\TestPython\logs\"
+
+foreach ($file in get-childitem $source *.*)
+{
+    $fileExists=join-path $dest $file;
+    if (-not (Test-Path -path $fileExists -PathType Leaf)) {
+        Copy-Item -path $file.FullName -Destination $dest
+        Write-Output $fileexists
+    }
+   
+   #Write-Output $file.FullName
+}
